@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "TT Commons";
+  src: url("/fonts/TTCommons-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pragmatica";
+  src: url("/fonts/Pragmatica-Book.ttf") format("truetype");
+}
+
+body {
+  font-family: "TT Commons", sans-serif;
+}
+
+body {
+  font-family: "Pragmatica", sans-serif;
+}

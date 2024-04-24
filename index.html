@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/fonts/stylesheet.css" rel="stylesheet" />
+  <link href="/style.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      content: ["./src/**/*.{html,js}"],
+      theme: {
+        screens: {
+          'sm': '414px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            white: "#FFFFFF",
+            gray: "#7E779A",
+          },
+          fontFamily: {
+            custom: ['TT Commons','sans-serif'],
+            small: ['Pragmatica','sans-serif']
+          },
+        },
+      },
+    };
+  </script>
+  <title>Manao</title>
+</head>
+<body>
+  <header class="container-dark-bg sm:py-0 py-[39px]">
+    <nav class="w-full flex cotainer-in-section items-center justify-between sm:p-8 relative">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox lg:hidden">
+      <label for="burger-checkbox" class="burger lg:hidden"></label>
+      <a href="#" class="menu-item"><img src="/assets/logo.svg" alt="logo" /></a>
+      <ul class="flex sm:flex-col sm:z-10 lg:flex-row  text-white items-center justify-between menu-list text-header font-custom">
+        <li><a href="#about-us" class="menu-item">О нас</a></li>
+        <li><a href="#services" class="menu-item">Услуги</a></li>
+        <li><a href="#publishes" class="menu-item">Публикации</a></li>
+      </ul>
+      <div class="text-header font-custom sm:hidden lg:flex">
+        <a href="tel:+375296755871">+375 (29) 675-58-71</a>
+        <a href="">info@manao-team.com</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="relative container-dark-bg custom-bg">
+      <div class="sm:p-8 cotainer-in-section">
+        <div class="text-white max-w-[794px] py-28">
+          <p class="font-small text-gray">Верстка. Программирование. Дизайн.</p>
+          <h1 class="font-custom text-[3.5rem] leading-[4.5rem] font-bold py-10">Техническая поддержка сайтов и
+            корпоративных порталов</h1>
+          <a href="#button"> <button class="button-gradient-bg button-custom">ОТПРАВИТЬ САЙТ НА ОЦЕНКУ
+            </button></a>
+        </div>
+        <div class="text-header font-custom justify-end py-10">
+          <p>Партнеры:</p>
+          <img class="pt-1" src="/assets/bitrix.svg" alt="bitrix" />
+        </div>
+      </div>
+    </section>
+    <section id="about-us" class="section-container">
+      <div class="sm:p-8 sm:flex-col lg:flex-row cotainer-in-section flex md:py-28 gap-8 items-end">
+        <div class="flex flex-col gap-3 w-full">
+          <h2 class="text-h2 font-custom">О нас</h2>
+          <p class="font-small text-xl font-semibold mt-5">Техподдержка от бесперебойного аутсорс-продакшна</p>
+          <p class="font-small text-xl my-5">
+            Являясь партнером более 30 агентств, которые доверили нам 100+
+            проектов и могут подтвердить качество работы, мы сформировали
+            новую услугу, использовав весь опыт, накопленный в первом юните.
+            Manao.Support — это концентрация системной работы, четких
+            процессов и регламентов, позволяющих минимизировать ситуации,
+            когда исполнители о чем-то забыли, не завершили часть задачи или
+            просто некорректно ее поняли.
+          </p>
+          <div class="sm:flex-col md:flex-row flex gap-6 items-center justify-center">
+            <img src="/assets/image1.svg" alt="image1" />
+            <img src="/assets/image2.svg" alt="image2" />
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-center">
+          <img class="sm:w-[270px] md:w-full" src="/assets/image3.svg" alt="image3" />
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section-container bg-[#F6F4F9]">
+      <div class="sm:p-8 cotainer-in-section flex flex-col md:py-28 gap-8 items-center">
+        <h2 class="text-h2 font-custom">Услуги</h2>
+        <p class="sm:text-center font-small text-lg text-gray">Возьмем на себя комплексную поддержку сайта/портала</p>
+        <div class="flex gap-2.5 w-full flex-wrap">
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative" src="/assets/radius.svg">
+            <img class="block" src="/assets/img1.svg" /></img>
+            <p class="m-w-150">Оптимизировать верстку</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative " src="/assets/radius.svg">
+            <img class="block" src="/assets/img2.svg" /></img>
+            <p class="m-w-150">Создать страницы</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative" src="/assets/radius.svg">
+            <img class="block" src="/assets/img3.svg" /></img>
+            <p>Адаптировать содержание</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative " src="/assets/radius.svg">
+            <img class="block" src="/assets/img4.svg" /></img>
+            <p class="m-w-150">Настроить интеграцию</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img src="/assets/img5.svg" />
+            <p class="m-w-150">Модернизировать сайт</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative" src="/assets/radius.svg">
+            <img class="block" src="/assets/img6.svg" /></img>
+            <p class="m-w-150">Исправить ошибки</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative " src="/assets/radius.svg">
+            <img class="block" src="/assets/img7.svg" /></img>
+            <p class="m-w-150">Разработать функционал</p>
+          </div>
+          <div class="sm:w-full md:w-[270px] block">
+            <img class="relative " src="/assets/radius.svg">
+            <img class="block" src="/assets/img8.svg" /></img>
+            <p class="m-w-150">Обновить систему</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="publishes" class="section-container">
+      <div class="sm:p-8 cotainer-in-section flex flex-col md:py-28 gap-8 items-center">
+        <h2 class="text-h2 font-custom">Публикации</h2>
+        <p class="font-small text-lg text-gray">Делимся своим опытом и экспертизой</p>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img class="slider" src="/assets/slider1.svg" alt="Slide 1">
+              <div class='bg-slider'>
+                <div class="p-8">
+                  <p class='font-custom text-xl font-bold'>Как мы подбираем людей для аутсорс-продакшна</p>
+                  <p class="font-small text-sm text-gray py-4">Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).</p>
+                  <hr class="text-[#C4C4C4]" />
+                  <div class="flex justify-between pt-4">
+                    <img src="/assets/logo-color.svg" />
+                    <div class="flex gap-2">
+                      <img src="/assets/calendar.svg" />
+                      <p class="text-[#C4C4C4]">12 мая 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider" src="/assets/slider2.svg" alt="Slide 1">
+              <div class='bg-slider'>
+                <div class="p-8">
+                  <p class='font-custom text-xl font-bold'>Как мы подбираем людей для аутсорс-продакшна</p>
+                  <p class="font-small text-sm text-gray py-4">Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).</p>
+                  <hr class="text-[#C4C4C4]" />
+                  <div class="flex justify-between pt-4">
+                    <img src="/assets/logo-color.svg" />
+                    <div class="flex gap-2">
+                      <img src="/assets/calendar.svg" />
+                      <p class="text-[#C4C4C4]">12 мая 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider" src="/assets/slider3.svg" alt="Slide 1">
+              <div class='bg-slider'>
+                <div class="p-8">
+                  <p class='font-custom text-xl font-bold'>Как мы подбираем людей для аутсорс-продакшна</p>
+                  <p class="font-small text-sm text-gray py-4">Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).</p>
+                  <hr class="text-[#C4C4C4]" />
+                  <div class="flex justify-between pt-4">
+                    <img src="/assets/logo-color.svg" />
+                    <div class="flex gap-2">
+                      <img src="/assets/calendar.svg" />
+                      <p class="text-[#C4C4C4]">12 мая 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider" src="/assets/slider1.svg" alt="Slide 1">
+              <div class='bg-slider'>
+                <div class="p-8">
+                  <p class='font-custom text-xl font-bold'>Как мы подбираем людей для аутсорс-продакшна</p>
+                  <p class="font-small text-sm text-gray py-4">Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).</p>
+                  <hr class="text-[#C4C4C4]" />
+                  <div class="flex justify-between pt-4">
+                    <img src="/assets/logo-color.svg" />
+                    <div class="flex gap-2">
+                      <img src="/assets/calendar.svg" />
+                      <p class="text-[#C4C4C4]">12 мая 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider" src="/assets/slider2.svg" alt="Slide 1">
+              <div class='bg-slider'>
+                <div class="p-8">
+                  <p class='font-custom text-xl font-bold'>Как мы подбираем людей для аутсорс-продакшна</p>
+                  <p class="font-small text-sm text-gray py-4">Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).</p>
+                  <hr class="text-[#C4C4C4]" />
+                  <div class="flex justify-between pt-4">
+                    <img src="/assets/logo-color.svg" />
+                    <div class="flex gap-2">
+                      <img src="/assets/calendar.svg" />
+                      <p class="text-[#C4C4C4]">12 мая 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="prev-btn">
+            <div class="arrow-btn rotate-180">
+              &rarr;
+            </div>
+          </button>
+          <button class="next-btn">
+            <div class="arrow-btn">
+              &rarr;
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer id="button" class="container-dark-bg footer-bg">
+    <div class="flex-col">
+      <div class="sm:p-8 cotainer-in-section flex md:flex-row flex-col md:py-28 gap-32">
+        <div class="flex flex-col sm:w-full md:w-1/3 gap-14">
+          <div>
+            <h2 class="footer-text-white text-5xl font-bold font-custom">Отправить сайт на оценку</h2>
+            <p class="font-small text-lg text-gray">Рассчитать смету?
+              Проконсультировать по проекту?
+              Подписать NDA?
+              Легко!</p>
+          </div>
+          <div>
+            <div>
+              <p class="footer-text-gray font-small">Наш адрес</p>
+              <p class="footer-text-white font-custom">Минск, Бирюзова 4/5, каб. 4005
+              </p>
+            </div>
+            <div>
+              <p class="footer-text-gray font-small">Время работы</p>
+              <p class="footer-text-white font-custom">пн-пт, с 9:00 до 18:00</p>
+            </div>
+            <div>
+              <p class="footer-text-gray font-small">Звоните</p>
+              <p class="footer-text-white font-custom">+7 (495) 128-13-24</p>
+            </div>
+            <div>
+              <p class="footer-text-gray font-small">Пишите</p>
+              <p class="footer-text-white font-custom">info@manao-team.com
+                @ ManaoTeamBot (Telegram, Viber)
+              </p>
+            </div>
+          </div>
+        </div>
+        <form id="myForm" class="flex flex-col gap-3 sm:w-full md:w-2/3">
+          <div>
+            <input class="footer-input" id="nameInput" placeholder="Ваше имя" required>
+          </div>
+          <div class="flex flex-col">
+            <label class="footer-text-gray font-small pb-2">Адрес сайта</label>
+            <input class="footer-input" id="siteInput" placeholder="manao@gmail.com" value="" required>
+          </div>
+          <div>
+            <textarea class="footer-input" id="descriptionTextarea" placeholder="Описание задач" required></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="consultationCheckbox" name="consultationCheckbox" value="consultation"
+              class="styled-checkbox">
+            <label for="consultationCheckbox" class="chexbox-text-white">Мне нужна консультация</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="tariffCheckbox" name="tariffCheckbox" value="tariff" class="styled-checkbox">
+            <label for="tariffCheckbox" class="chexbox-text-white">Подберите для нас тариф</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="accessCheckbox" name="accessCheckbox" value="access" class="styled-checkbox">
+            <label for="accessCheckbox" class="chexbox-text-white">Готовы предоставить доступ для более детальной
+              оценки</label>
+          </div>
+          <div class="flex gap-10 items-center">
+            <p class="footer-text-gray font-small">Нажимая на кнопку, вы соглашаетесь на обработку <u>персональных
+                данных</u></p>
+            <button type="submit" class="button-custom button-gradient-border">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <hr class="text-[#C4C4C4] pt-14" />
+      </div>
+      <div class="sm:p-8 sm:flex-col md:flex-row flex justify-between gap-5 mb-14">
+        <div class="flex gap-3">
+          <div class="footer-img">
+            <img src="/assets/footer-img-1.svg" alt="footer1" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-2.svg" alt="footer2" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-3.svg" alt="footer3" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-4.svg" alt="footer4" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-5.svg" alt="footer5" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-1.svg" alt="footer1" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-2.svg" alt="footer2" />
+          </div>
+          <div class="footer-img">
+            <img src="/assets/footer-img-3.svg" alt="footer3" />
+          </div>
+        </div>
+        <p class="footer-text-gray font-small">Политика обработки персональных данных</p>
+        <p class="footer-text-gray font-small">Manao.Support — «Битриксоиды» до мозга костей</p>
+      </div>
+    </div>
+  </footer>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Спасибо, ваша заявка принята</p>
+    </div>
+  </div>
+  <script src='slider.js'></script>
+  <script src="form.js"></script>
+</body>
+</html>
